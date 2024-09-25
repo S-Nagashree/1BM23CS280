@@ -1,1 +1,15 @@
 https://leetcode.com/problems/move-zeroes/submissions/1401463464
+void moveZeroes(int* num, int nums) {
+    int lidx = 0;
+
+    for (int idx = 0; idx < nums; idx++) {
+        if (num[idx] != 0) {
+            num[lidx] = num[idx];
+            lidx++;
+        }
+    }
+
+    for (int i = lidx; i < nums; i++) {
+        num[i] = 0;
+    }
+}
