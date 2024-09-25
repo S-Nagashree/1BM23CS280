@@ -1,4 +1,6 @@
+Link:
 https://leetcode.com/problems/move-zeroes/submissions/1401463464
+Code:
 void moveZeroes(int* num, int nums) {
     int lidx = 0;
 
